@@ -60,6 +60,10 @@ Style/GuardClause:
 Style/StringLiterals:
   Enabled: false
 
+# シンボルのダブルクォートチェック
+Style/QuotedSymbols:
+  Enabled: false
+
 # 文字列による配列の%記法のチェック
 Style/WordArray:
   Enabled: false
