@@ -1,0 +1,16 @@
+exclude:
+  - '**/vendor/**/*'
+  - '**/node_modules/**/*'
+EnableDefaultLinters: true
+linters:
+  Rubocop:
+    enabled: true
+    rubocop_config:
+      inherit_from:
+        - .rubocop.yml
+      Style/FrozenStringLiteralComment:  #ファイルの先頭に文字列をfreezeするかの記述をしてくださいというものです。
+        Enabled: false
+      Layout/InitialIndentation: #行の最初のインデントがどのように設定されるか
+        Enabled: false
+      Layout/TrailingEmptyLines: #コードの最後に空行があるかどうか
+        Enabled: false
