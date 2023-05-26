@@ -1,0 +1,48 @@
+<div class="h-96 hero" style="background-image: url(<%= asset_path('top_image.jpg') %>);">
+    <h1 class="bg-primary rounded-lg drop-shadow-lg mt-30 p-4 text-center"><span class="text-base sm:text-xl md:text-2xl font-serif text-white">休日スケジュール<br>休日スケジュール投稿アプリ</span></h1>
+</div>
+
+<div class="wrapper mx-auto bg-primary-content py-20">
+  <div class="p-10">
+    <h2 class="bg-white rounded-lg drop-shadow-lg text-center"><span class="text-sm sm:text-base md:text-xl font-serif font-bold text-primary">休日スケジュールの使い方</span></h2>
+  </div>
+  <div class="grid grid-cols-1 xl:grid-cols-3 gap-2 justify-items-center">
+    <div class="card w-4/5 sm:w-96 bg-base-100 shadow-xl">
+      <figure class="h-60">
+        <%= image_tag "top_1.png", class: "rounded-xl" %>
+      </figure>
+      <div class="card-body items-center text-center">
+        <h2 class="card-title"><span class="text-base">1.みんなの休日を見てみよう</span></h2>
+        <p class="text-left">一覧ページからみんなの休日を覗いてみよう。「スケジュールタイトル」「起床時間」「就寝時間」「人数」から、検索することができます</p>
+      </div>
+    </div>
+
+    <div class="card w-4/5 sm:w-96 bg-base-100 shadow-xl">
+      <figure class="h-60">
+        <%= image_tag "top_2.png", class: "rounded-xl" %>
+      </figure>
+      <div class="card-body items-center text-center">
+        <h2 class="card-title"><span class="text-base">2.ユーザー登録をしてみよう</span></h2>
+        <p class="text-left"> ユーザー登録をすると、「スケジュールの作成」「投稿されたスケジュールのいいね」ができるようになります。</p>
+      </div>
+    </div>
+
+    <div class="card w-4/5 sm:w-96 bg-base-100 shadow-xl">
+      <figure class="h-60">
+        <%= image_tag "top_3.png", class: "rounded-xl" %>
+      </figure>
+      <div class="card-body items-center text-center">
+        <h2 class="card-title"><span class="text-base">3.休日スケジュールを投稿してみよう</span></h2>
+        <ol class="list-decimal text-left">
+          <li>「スケジュールタイトル」「起床時間」「就寝時間」「人数」を入力してスケジュールを作成しよう</li>
+          <br>
+          <li>作成したスケジュール内で、「開始時間」「終了時間」「イベントタイトル」等を入力してイベントを作成しよう</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <div class="flex gap-2 md:gap-6 justify-center p-12 ">
+    <%= link_to t('defaults.schedules'), "#", class: 'btn btn-secondary text-white', data: { turbo: false } %>
+    <%= link_to t('defaults.signup'), "#", class: 'btn btn-secondary text-white' %>
+  </div>
+</div>
