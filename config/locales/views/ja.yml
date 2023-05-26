@@ -1,0 +1,12 @@
+ja:
+  defaults:
+    login: 'ログイン'
+    signup: 'ユーザー登録'
+    logout: 'ログアウト'
+    terms: "利用規約"
+    privacy: "プライバシーポリシー"
+    contact: "お問い合わせ"
+    schedules: "みんなのスケジュール"
+    month_rank: "ランキング"
+    my_page: "マイページ"
+    create: "スケジュール作成"
