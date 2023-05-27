@@ -1,0 +1,14 @@
+<% flash.each do |message_type, message| %>
+  <div data-controller='flash'>
+    <% case message_type %>
+      <% when 'success' %>
+        <div class="bg-success p-6 border-4 border-green-600">
+          <span class="font-bold"><%= message %></span>
+        </div>
+      <% when 'error' %>
+        <div class="bg-error p-6 border-4 border-red-600">
+          <span class="font-bold"><%= message %></span>
+        </div>
+    <% end %>
+  </div>
+<% end %>
