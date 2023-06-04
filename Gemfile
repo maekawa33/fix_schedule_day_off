@@ -75,7 +75,7 @@ group :test do
   gem 'capybara'
 
   # webドライバの自動インストール、アップデート
-  gem 'webdrivers'
+  gem  "selenium-webdriver", ">= 4.0.0" 
 end
 
 group :development do
