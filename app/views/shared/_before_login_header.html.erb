@@ -9,7 +9,7 @@
             <ul class="menu menu-horizontal px-1">
             <li><%= link_to t('defaults.schedules'), "#", { class: 'btn btn-secondary mr-2' } %></li>
             <li><%= link_to t('defaults.month_rank'), "#", { class: 'btn btn-secondary mr-2' } %></li>
-            <li><%= link_to t('defaults.signup'), "#", { class: 'btn btn-secondary mr-2' } %></li>
+            <li><%= link_to t('defaults.signup'), new_user_path, { class: 'btn btn-secondary mr-2' } %></li>
             <li><%= link_to t('defaults.login'), "#", { class: 'btn btn-secondary' } %></li>
             </ul>
         </div>
@@ -18,7 +18,7 @@
             <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-64 gap-2">
                 <li><%= link_to t('defaults.schedules'), "#", { class: 'btn btn-secondary w-4/5 mx-auto' } %></li>
                 <li><%= link_to t('defaults.month_rank'), "#", { class: 'btn btn-secondary w-4/5 mx-auto' } %></li>
-                <li><%= link_to t('defaults.signup'), "#", { class: 'btn btn-secondary w-4/5 mx-auto' } %></li>
+                <li><%= link_to t('defaults.signup'), new_user_path, { class: 'btn btn-secondary w-4/5 mx-auto' } %></li>
                 <li><%= link_to t('defaults.login'), "#", { class: 'btn btn-secondary w-4/5 mx-auto' } %></li>
             </ul>
         </div>

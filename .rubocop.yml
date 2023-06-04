@@ -5,6 +5,7 @@ require:
   - rubocop-rails
 
 AllCops:
+  TargetRubyVersion: 3.1.4
   SuggestExtensions: false
   # 最新のルールを適用する
   NewCops: enable
@@ -74,4 +75,24 @@ Lint/AssignmentInCondition:
 
 # メソッド名等の命名の指摘
 Naming/PredicateName:
+  Enabled: false
+
+# 許可されたプレフィックスで始まっているか指摘
+RSpec/ContextWording:
+  Enabled: false
+
+# specのコードの長さを指摘
+RSpec/ExampleLength:
+  Max: 10
+
+# expectの数を指摘
+RSpec/MultipleExpectations:
+  Max: 3
+
+# ブロックコメントを指摘
+Style/BlockComments:
+ Enabled: false
+
+# 定数に冗長な 「::」プレフィックスがないか指摘
+Style/RedundantConstantBase:
   Enabled: false

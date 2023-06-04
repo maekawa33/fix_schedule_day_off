@@ -10,3 +10,9 @@ ja:
     month_rank: "ランキング"
     my_page: "マイページ"
     create: "スケジュール作成"
+  users:
+    new:
+      title: 'メールアドレスでユーザー登録'
+    create:
+      success: "ユーザー「%{name}」を作成しました"
+      fail: 'ユーザーの作成に失敗しました'
