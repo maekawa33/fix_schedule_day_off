@@ -10,9 +10,19 @@ ja:
     month_rank: "ランキング"
     my_page: "マイページ"
     create: "スケジュール作成"
+    message:
+      require_login: 'ログインしてください'
   users:
     new:
       title: 'メールアドレスでユーザー登録'
     create:
       success: "ユーザー「%{name}」を作成しました"
       fail: 'ユーザーの作成に失敗しました'
+  user_sessions:
+    new:
+      title: 'メールアドレスでログイン'
+    create:
+      success: "ユーザー「%{name}」でログインしました"
+      fail: 'ログインに失敗しました'
+    destroy:
+      success: 'ログアウトしました'
