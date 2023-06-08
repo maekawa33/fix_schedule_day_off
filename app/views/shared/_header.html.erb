@@ -1,7 +1,7 @@
 <header>
     <div class="navbar bg-primary text-white h-20">
         <div class="flex-1">
-            <%= link_to top_path do %>
+            <%= link_to root_path do %>
                 <%= image_tag 'logo.png', class: 'w-20 p-2' %>
             <% end %>
         </div>
@@ -10,7 +10,7 @@
             <li><%= link_to t('defaults.schedules'), "#", { class: 'btn btn-secondary mr-2' } %></li>
             <li><%= link_to t('defaults.month_rank'), "#", { class: 'btn btn-secondary mr-2' } %></li>
             <li><%= link_to t('defaults.my_page'), "#", { class: 'btn btn-secondary mr-2' } %></li>
-            <li><%= link_to t('defaults.logout'), "#", { class: 'btn btn-secondary mr-2', method: :delete } %></li>
+            <li><%= link_to t('defaults.logout'), logout_path, { id: 'logout_test', class: 'btn btn-secondary mr-2', data: { turbo_method: :delete } } %></li>
             <li><%= link_to t('defaults.create'), "#", { class: 'btn btn-accent' } %></li>
             </ul>
         </div>
@@ -20,7 +20,7 @@
                 <li><%= link_to t('defaults.schedules'), "#", { class: 'btn btn-secondary w-4/5 mx-auto' } %></li>
                 <li><%= link_to t('defaults.month_rank'), "#", { class: 'btn btn-secondary w-4/5 mx-auto' } %></li>
                 <li><%= link_to t('defaults.my_page'), "#", { class: 'btn btn-secondary w-4/5 mx-auto' } %></li>
-                <li><%= link_to t('defaults.logout'), "#", { class: 'btn btn-secondary w-4/5 mx-auto', method: :delete } %></li>
+                <li><%= link_to t('defaults.logout'), logout_path, { class: 'btn btn-secondary w-4/5 mx-auto', data: { turbo_method: :delete } } %></li>
                 <li><%= link_to t('defaults.create'), "#", { class: 'btn btn-accent w-4/5 mx-auto' } %></li>
             </ul>
         </div>

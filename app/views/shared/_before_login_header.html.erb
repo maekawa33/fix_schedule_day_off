@@ -1,7 +1,7 @@
 <header>
     <div class="navbar bg-primary text-white h-20">
         <div class="flex-1">
-            <%= link_to top_path do %>
+            <%= link_to root_path do %>
                 <%= image_tag 'logo.png', class: 'w-20 p-2' %>
             <% end %>
         </div>
@@ -10,7 +10,7 @@
             <li><%= link_to t('defaults.schedules'), "#", { class: 'btn btn-secondary mr-2' } %></li>
             <li><%= link_to t('defaults.month_rank'), "#", { class: 'btn btn-secondary mr-2' } %></li>
             <li><%= link_to t('defaults.signup'), new_user_path, { class: 'btn btn-secondary mr-2' } %></li>
-            <li><%= link_to t('defaults.login'), "#", { class: 'btn btn-secondary' } %></li>
+            <li><%= link_to t('defaults.login'), login_path, { class: 'btn btn-secondary' } %></li>
             </ul>
         </div>
         <div class="dropdown dropdown-end">
@@ -19,7 +19,7 @@
                 <li><%= link_to t('defaults.schedules'), "#", { class: 'btn btn-secondary w-4/5 mx-auto' } %></li>
                 <li><%= link_to t('defaults.month_rank'), "#", { class: 'btn btn-secondary w-4/5 mx-auto' } %></li>
                 <li><%= link_to t('defaults.signup'), new_user_path, { class: 'btn btn-secondary w-4/5 mx-auto' } %></li>
-                <li><%= link_to t('defaults.login'), "#", { class: 'btn btn-secondary w-4/5 mx-auto' } %></li>
+                <li><%= link_to t('defaults.login'), login_path, { class: 'btn btn-secondary w-4/5 mx-auto' } %></li>
             </ul>
         </div>
     </div>
