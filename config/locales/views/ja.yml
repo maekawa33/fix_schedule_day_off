@@ -10,8 +10,14 @@ ja:
     month_rank: "ランキング"
     my_page: "マイページ"
     create: "スケジュール作成"
+    people: '人数'
+    get_up: '起床'
+    sleep: '就寝'
     message:
       require_login: 'ログインしてください'
+  time:
+    formats:
+      default: "%H:%M"
   users:
     new:
       title: 'メールアドレスでユーザー登録'
@@ -26,3 +32,9 @@ ja:
       fail: 'ログインに失敗しました'
     destroy:
       success: 'ログアウトしました'
+  schedules:
+    new:
+      title: 'スケジュール作成'
+    create:
+      success: "スケジュール「%{title}」を作成しました"
+      fail: 'スケジュールの作成に失敗しました'

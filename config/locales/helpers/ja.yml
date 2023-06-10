@@ -7,3 +7,5 @@ ja:
       create: '作成'
       submit: '保存'
       update: '更新'
+    select:
+      prompt: '選択してください'

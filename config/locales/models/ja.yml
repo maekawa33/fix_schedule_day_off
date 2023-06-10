@@ -2,6 +2,7 @@ ja:
   activerecord:
     models:
       user: 'ユーザー'
+      schedule: 'スケジュール'
     attributes:
       user:
         id: 'ID'
@@ -10,3 +11,17 @@ ja:
         avatar: 'ユーザー画像（任意）'
         password: 'パスワード'
         password_confirmation: 'パスワード（確認）'
+      schedule:
+        id: 'ID'
+        schedule_title: 'スケジュール名'
+        assumed_number_people: '人数'
+        get_up_time: '起床時間'
+        sleep_time: '就寝時間'
+  enums:
+    schedule:
+      assumed_number_people: 
+          one_person: '1人'
+          two_people: '2人'
+          three_people: '3人'
+          four_or_more_people: '複数人'
+    
