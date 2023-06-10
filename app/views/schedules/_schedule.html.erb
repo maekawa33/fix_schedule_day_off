@@ -1,0 +1,29 @@
+<div class='container relative p-2 bg-white drop-shadow-xl hover:border-4'>
+    <%= link_to "#", class: 'absolute top-0 left-0 right-0 bottom-0' do %>
+    <% end %>
+
+    <div class='flex'>
+        <%= link_to "#", class: 'z-10' do %>
+            <h3 class="pt-2 pl-2"><%= schedule.user.name %></h3>
+        <% end %>
+    </div>
+
+    <div class='ml-8'>
+        <h1 class=" text-2xl font-bold"><%= schedule.schedule_title %></h1>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 md:gap-2">
+            <div class="flex">
+                <h2 class="text-sm md:text-base"><%= t('defaults.people') %></h2>
+                <h2 class="text-sm md:text-base"><%= schedule.assumed_number_people_i18n %></h2>
+            </div>
+            <div class="flex">
+                <h2 class="text-sm md:text-base"><%= t('defaults.get_up') %></h2>
+                <h2 class="text-sm md:text-base"><%= l schedule.get_up_time %></h2>
+            </div>
+            <div class="flex">
+                <h2 class="text-sm md:text-base"><%= t('defaults.sleep') %></h2>
+                <h2 class="text-sm md:text-base"><%= l schedule.sleep_time %></h2>
+            </div>
+        </div>
+    </div>
+</div>
