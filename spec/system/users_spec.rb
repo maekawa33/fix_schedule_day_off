@@ -12,7 +12,8 @@ RSpec.describe 'Users' do
         fill_in 'パスワード', with: 'password'
         fill_in 'パスワード（確認）', with: 'password'
         click_button '作成'
-        expect(page).to have_content '休日スケジュールの使い方'
+        expect(page).to have_content "ユーザー「Example」を作成しました"
+        expect(page).to have_current_path schedules_path, ignore_query: true
       end
     end
 
