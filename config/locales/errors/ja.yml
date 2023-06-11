@@ -1,0 +1,5 @@
+ja:
+  activerecord:
+    errors:
+      messages:
+        content_type_invalid: 'はJPG、JPEGまたはPNG形式である必要があります。'
