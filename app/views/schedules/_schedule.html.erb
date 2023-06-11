@@ -3,6 +3,13 @@
     <% end %>
 
     <div class='flex'>
+        <div class='avatar'>
+            <div class='w-10 rounded-full border-2 border-primary bg-white'>
+                <%= link_to '#', class: 'z-10' do %>
+                    <%= image_tag schedule.user.avatar.variant(:user_index) %>
+                <% end %>
+            </div>
+        </div>
         <%= link_to "#", class: 'z-10' do %>
             <h3 class="pt-2 pl-2"><%= schedule.user.name %></h3>
         <% end %>
