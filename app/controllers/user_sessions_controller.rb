@@ -5,7 +5,7 @@ class UserSessionsController < ApplicationController
   def create
     @user = login(params[:email], params[:password])
     if @user
-      redirect_back_or_to root_path, success: t('.success', name: @user.name)
+      redirect_back_or_to schedules_path, success: t('.success', name: @user.name)
     else
       flash.now[:error] = t('.fail')
       render :new, status: :unprocessable_entity
