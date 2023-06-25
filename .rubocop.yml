@@ -96,3 +96,7 @@ Style/BlockComments:
 # 定数に冗長な 「::」プレフィックスがないか指摘
 Style/RedundantConstantBase:
   Enabled: false
+
+# 進数を明示的に指定しているか
+Style/NumericLiteralPrefix:
+  Enabled: false
