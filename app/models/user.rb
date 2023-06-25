@@ -5,6 +5,7 @@ class User < ApplicationRecord
 
   has_one_attached :avatar do |attachable|
     attachable.variant :user_index, resize_to_limit: [100, 100]
+    attachable.variant :user_show, resize_to_limit: [160, 160]
   end
 
   has_many :schedules, dependent: :destroy
