@@ -14,7 +14,8 @@ services:
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: password
-      SELENIUM_REMOTE_URL: http://chrome:4444/wd/hub
+      SELENIUM_DRIVER_URL: http://chrome:4444/wd/hub
+      TZ: Asia/Tokyo
     volumes:
       - .:/webapp
     ports:
@@ -26,7 +27,9 @@ services:
       - db
       - chrome
   chrome:
-    image: selenium/standalone-chrome:latest
+    image: selenium/standalone-chrome-debug
+    logging:
+      driver: none
     ports:
       - 4444:4444
     shm_size: 2gb
