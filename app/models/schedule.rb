@@ -1,4 +1,6 @@
 class Schedule < ApplicationRecord
+  before_save :check_day_sleep_time
+  
   belongs_to :user
   has_many :events, dependent: :destroy
 
@@ -15,5 +17,9 @@ class Schedule < ApplicationRecord
       total_price += event.price if event.price
     end
     total_price
+  end
+
+  def check_day_sleep_time
+    sleep_time + 1.day if get_up_time > sleep_time
   end
 end
