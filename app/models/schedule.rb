@@ -8,4 +8,12 @@ class Schedule < ApplicationRecord
   validates :sleep_time, presence: true
 
   enum assumed_number_people: { one_person: 0, two_people: 1, three_people: 2, four_or_more_people: 3 }
+
+  def total_price
+    total_price = 0
+    events.each do |event|
+      total_price += event.price if event.price
+    end
+    total_price
+  end
 end
