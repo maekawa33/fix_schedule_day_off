@@ -21,8 +21,9 @@ RSpec.configure do |config|
       driven_by :selenium, using: :chrome, options: {
         browser: :remote,
         url: ENV.fetch("SELENIUM_DRIVER_URL"),
-        desired_capabilities: :chrome
+        options: :chrome
       }
+      Capybara.server_host = IPSocket.getaddress(Socket.gethostname)
     else
       driven_by :selenium_chrome_headless
     end

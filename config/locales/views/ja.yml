@@ -1,5 +1,6 @@
 ja:
   defaults:
+    cansel: 'キャンセル'
     login: 'ログイン'
     signup: 'ユーザー登録'
     logout: 'ログアウト'
@@ -13,6 +14,7 @@ ja:
     people: '人数'
     get_up: '起床'
     sleep: '就寝'
+    money: '金額'
     message:
       require_login: 'ログインしてください'
   time:
@@ -38,3 +40,5 @@ ja:
     create:
       success: "スケジュール「%{title}」を作成しました"
       fail: 'スケジュールの作成に失敗しました'
+    show:
+      create_event: 'イベント作成'

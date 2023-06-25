@@ -83,7 +83,7 @@ RSpec/ContextWording:
 
 # specのコードの長さを指摘
 RSpec/ExampleLength:
-  Max: 10
+  Max: 20
 
 # expectの数を指摘
 RSpec/MultipleExpectations:
@@ -95,4 +95,8 @@ Style/BlockComments:
 
 # 定数に冗長な 「::」プレフィックスがないか指摘
 Style/RedundantConstantBase:
+  Enabled: false
+
+# 進数を明示的に指定しているか
+Style/NumericLiteralPrefix:
   Enabled: false
