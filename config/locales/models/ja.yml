@@ -17,6 +17,14 @@ ja:
         assumed_number_people: '人数'
         get_up_time: '起床時間'
         sleep_time: '就寝時間'
+      event:
+        id: 'ID'
+        start_time: '開始時間（必須）'
+        end_time: '終了時間'
+        event_title: 'タイトル（必須）'
+        image: '画像'
+        price: '価格'
+        comment: 'コメント'
   enums:
     schedule:
       assumed_number_people: 

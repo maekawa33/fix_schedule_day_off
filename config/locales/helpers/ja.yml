@@ -9,3 +9,8 @@ ja:
       update: '更新'
     select:
       prompt: '選択してください'
+    placeholder:
+      event:
+        event_title: '〜をする'
+        price: '000円'
+        comment: '〜がおすすめです'
