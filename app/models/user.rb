@@ -16,6 +16,15 @@ class User < ApplicationRecord
   validates :email, uniqueness: true, presence: true
   validates :name, presence: true, length: { maximum: 255 }
   validates :avatar, content_type: ['image/png', 'image/jpg', 'image/jpeg']
+
+  def own?(object)
+    id == object.user_id
+  end
+
+  def mine?(object)
+    id == object.id
+  end
+
   private
 
   def default_avatar
